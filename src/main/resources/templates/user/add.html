@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleafe.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+
+<body>
+    <form method="post" action="/user">
+        <label>Email</label>
+        <input type="email" name="email" th:value="${email}">
+        <label>User Name</label>
+        <input type="text" name="username" th:value="${username}">
+        <label>Password</label>
+        <input type="password" name="password">
+        <input type="password" name="verify">
+        <label>Verify Password</label>
+        <input type="submit" name="submit">
+    </form>
+</body>
+<p th:text="${error}"></p>
+</html>
